@@ -1,0 +1,239 @@
+/* ====================
+   Global Reset
+==================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Roboto Condensed", sans-serif;
+}
+
+/* ====================
+   Page Background
+==================== */
+body {
+  min-height: 100vh;
+  padding: 20px;
+  background: #B8E3E9;
+  color: #1f2937;
+}
+
+/* ====================
+   Layout Helpers
+==================== */
+.app-container {
+  min-height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+}
+
+.page-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* ====================
+   Navbar
+==================== */
+nav {
+  background: rgba(80, 100, 140, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 16px 28px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #EEAECA;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+nav a:hover {
+  color: #94BBE9;
+  text-decoration: underline;
+}
+
+nav button {
+  margin-left: auto;
+  background: #e53935;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+nav button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(231, 76, 60, 0.3);
+}
+
+/* ====================
+   Tracker Card
+==================== */
+.tracker {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(148, 187, 233, 0.2);
+}
+
+/* ====================
+   Headings
+==================== */
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #6B5B8F;
+}
+
+h3 {
+  margin: 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #94BBE9;
+  text-align: center;
+}
+
+/* ====================
+   Button Group
+==================== */
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin: 28px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ====================
+   Buttons
+==================== */
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #94BBE9;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(148, 187, 233, 0.3);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(148, 187, 233, 0.5);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+/* ====================
+   Goal Row
+==================== */
+.goal-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 24px 0;
+  padding: 14px;
+  background: #EEAECA;
+  border-radius: 10px;
+  border-left: 4px solid #94BBE9;
+}
+
+.goal-row label {
+  font-weight: 600;
+  color: #6B5B8F;
+  font-size: 15px;
+}
+
+/* ====================
+   Input
+==================== */
+input {
+  padding: 10px 12px;
+  width: 80px;
+  border-radius: 8px;
+  border: 2px solid #94BBE9;
+  font-size: 15px;
+  font-weight: 600;
+  color: #6B5B8F;
+  background: rgba(148, 187, 233, 0.1);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6B5B8F;
+  box-shadow: 0 0 8px rgba(148, 187, 233, 0.3);
+}
+
+/* ====================
+   Progress Text
+==================== */
+.progress-text {
+  margin: 20px 0;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6B5B8F;
+  background: #FAE6F1;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ====================
+   Health Tip
+==================== */
+.health-tip {
+  margin-top: 20px;
+  padding: 16px;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #1f2937;
+  background: #EEAECA;
+  border-left: 4px solid #94BBE9;
+  border-radius: 8px;
+}
+
+/* ====================
+   Strong text (IMPORTANT)
+==================== */
+strong {
+  font-weight: 700;
+  color: #6B5B8F;
+}
+
+/* ====================
+   Divider
+==================== */
+hr {
+  margin: 24px 0;
+  border: none;
+  height: 2px;
+  background: #94BBE9;
+}
