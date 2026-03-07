@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`DashboardSettings matches snapshot 1`] = `
+<DocumentFragment>
+  <h3>
+    These are the settings
+  </h3>
+</DocumentFragment>
+`;

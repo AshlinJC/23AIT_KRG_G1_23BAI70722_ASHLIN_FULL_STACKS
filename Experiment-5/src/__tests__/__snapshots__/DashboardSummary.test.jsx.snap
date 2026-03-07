@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`DashboardSummary matches snapshot 1`] = `
+<DocumentFragment>
+  <h3>
+    This is a Summary
+  </h3>
+</DocumentFragment>
+`;
