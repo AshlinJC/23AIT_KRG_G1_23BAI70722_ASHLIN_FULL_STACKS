@@ -141,24 +141,4 @@ This is a demo-oriented implementation.
 - `ClassNotFoundException` during execution: run `mvn clean compile` first.
 - `java` or `mvn` not recognized: install tools and fix PATH.
 
-## License
 
-No license file is currently included. Add a `LICENSE` file if you plan to distribute this project.
-
-## Safe GitHub Publishing Checklist
-
-Before pushing this project to a public repository, make sure the following are not included:
-
-- Real secrets or keys (API keys, AES keys used in production, certificates, `.env` values).
-- Sensitive/private datasets (especially health or personally identifiable information).
-- Build outputs and generated artifacts (`target/`, `.class`, logs).
-
-For this repository specifically:
-
-- `src/main/java/common/AESUtil.java` currently uses a fixed demo key for reproducibility.
-  - Keep this only for demonstration.
-  - For real deployments, load keys from environment variables or a secret manager.
-- Keep private datasets out of tracked folders.
-  - Use `src/main/resources/data/private/` for non-public data (already ignored by `.gitignore`).
-
-If sensitive files were committed earlier, removing them locally is not enough. Rewrite history before making the repo public.
